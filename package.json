@@ -19,8 +19,7 @@
     "url": "https://github.com/stephanepericat/express-es6-starter"
   },
   "dependencies": {
-    "express": "^4.14.0",
-    "yahoo-finance-data": "^1.0.1"
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
