@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "backpack",
     "build": "backpack build",
-    "test": "babel-node node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha"
+    "test-server": "babel-node node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha"
   },
   "pre-commit": [
-    "test"
+    "test-server"
   ],
   "author": "Stephane P. Pericat <contact@shortwavapp.com>",
   "license": "MIT",
