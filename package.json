@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "backpack",
     "build": "backpack build",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint": "./node_modules/.bin/eslint test/** src/**"
   },
   "pre-commit": [
+    "lint",
     "test"
   ],
   "author": "Q.S. Wang <wangqs_eclipse@yahoo.com>",
@@ -24,10 +26,11 @@
     "babel-cli": "^6.18.0",
     "babel-preset-env": "^1.6.1",
     "backpack-core": "^0.4.3",
+    "eslint": "^4.11.0",
+    "jest": "^21.2.1",
     "kexec": "^3.0.0",
     "pre-commit": "^1.2.2",
     "supertest": "^3.0.0",
-    "webpack": "^3.8.1",
-    "jest": "^21.2.1"
+    "webpack": "^3.8.1"
   }
 }
