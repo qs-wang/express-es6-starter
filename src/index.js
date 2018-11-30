@@ -1,5 +1,8 @@
 import app from './app';
+import {getLogger} from './utils/loggerfactory';
 
-app.listen(3000, ()=>{
-  //console.log('App started on port 3000.');
+const logger = getLogger('index');
+
+app.listen(3001, ()=>{
+  logger.info('App started on port 3001.');
 });

@@ -1,6 +1,11 @@
 {
   "presets": [
-    "backpack-core/babel",
-    "env"
+    [
+      "@babel/preset-env", {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
   ]
 }
